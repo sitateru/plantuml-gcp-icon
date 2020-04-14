@@ -16,11 +16,8 @@ SZx8-O1R3yZvW5iFmFNuKaeffPHIIYcl
 !definelong GCP_CloudVisionAPI(alias,name,container='rectangle',stereo='CloudVisionAPI')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$CloudVisionAPI{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$CloudVisionAPI{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

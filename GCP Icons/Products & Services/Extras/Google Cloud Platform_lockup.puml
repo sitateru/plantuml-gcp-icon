@@ -32,11 +32,8 @@ QWkBcwnKn9h_BhM5zOsJAiIZScr_2NkO9rJWn4u100000000081N
 !definelong GCP_GoogleCloudPlatform_lockup(alias,name,container='rectangle',stereo='GoogleCloudPlatform_lockup')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$GoogleCloudPlatform_lockup{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$GoogleCloudPlatform_lockup{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

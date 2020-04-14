@@ -31,11 +31,8 @@ Fl4-yJxnFl4-Fhi_
 !definelong GCP_Kubernetes_logo(alias,name,container='rectangle',stereo='Kubernetes_logo')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$Kubernetes_logo{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$Kubernetes_logo{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

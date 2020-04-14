@@ -18,11 +18,8 @@ f4YH8aMA52bIf4YH8aMA52bIf4YH8aMA52doaym18ZFHkC04ueOIY1jC86ummRYX1E864uWRJ21kCC6u
 !definelong GCP_TensorFlow_logo(alias,name,container='rectangle',stereo='TensorFlow_logo')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$TensorFlow_logo{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$TensorFlow_logo{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

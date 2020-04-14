@@ -9,13 +9,10 @@ TEMPLATE=$(cat <<EOF
 !definelong GCP___SPRITE__(alias,name,container='rectangle',stereo='__SPRITE__')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><\$__SPRITE__{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><\$__SPRITE__{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong
 EOF
 )

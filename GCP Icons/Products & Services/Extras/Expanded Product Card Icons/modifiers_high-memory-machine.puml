@@ -7,11 +7,8 @@ xTIrOGH100H1PL3vPojNhET-c7Rk5ilRjtjfhRNMMciHiKGi0Pl09309J0AJm2Gm2Km2ay0aC0bC0fF0
 !definelong GCP_modifiers_highmemorymachine(alias,name,container='rectangle',stereo='modifiers_highmemorymachine')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$modifiers_highmemorymachine{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$modifiers_highmemorymachine{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

@@ -21,11 +21,8 @@ BgaD002W4uq2000000000000000000000000000000000000003WWG00000000000000000000000000
 !definelong GCP_Istio_logo(alias,name,container='rectangle',stereo='Istio_logo')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$Istio_logo{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$Istio_logo{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

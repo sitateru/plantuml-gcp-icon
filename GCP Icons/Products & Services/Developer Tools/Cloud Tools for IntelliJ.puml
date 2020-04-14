@@ -18,11 +18,8 @@ dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 !definelong GCP_CloudToolsforIntelliJ(alias,name,container='rectangle',stereo='CloudToolsforIntelliJ')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$CloudToolsforIntelliJ{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$CloudToolsforIntelliJ{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong

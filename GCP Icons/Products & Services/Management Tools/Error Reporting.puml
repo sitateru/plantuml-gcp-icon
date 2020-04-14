@@ -16,11 +16,8 @@ FxpvySES3tZpuuStFtwOym5lVlmmvmFcVC2S3xZnwypqTMxyEZjztVRuBCkoBCkoBCkox5y
 !definelong GCP_ErrorReporting(alias,name,container='rectangle',stereo='ErrorReporting')
 skinparam container<<stereo>> {
   BackgroundColor White
-  BorderColor White
+  BorderColor GCP_BORDER_COLOR
   Shadowing false
 }
-container alias <<stereo>> [
-<b>name
-<color:GCP_COLOR><$ErrorReporting{scale=0.3}></color>
-]
+container "<b>name</b>\n<color:GCP_COLOR><$ErrorReporting{scale=0.25}></color>" <<stereo>> as alias
 !enddefinelong
