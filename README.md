@@ -1,14 +1,16 @@
-* About
+# PlantUML GCP Icon
 
-This is heavily inspired in the [[https://github.com/milo-minderbinder/AWS-PlantUML][PlantUML AWS library]].
+## About
 
-* How to use
+Forked from [plantuml-gcp-icons](https://gitlab.com/rolando.a/plantuml-gcp-icons/)
+
+## How to use
 
 Clone/download a copy of this repo and then make sure to include
 ~common.puml~ first (or define ~GCP_COLOR~), then all the icons you
 might need.
 
-#+BEGIN_SRC plantuml
+```
   @startuml
   !include ./common.puml
   !include ./GCP Icons/Products & Services/Storage & Databases/Cloud Bigtable.puml
@@ -20,12 +22,12 @@ might need.
   foo -> bar
 
   @enduml
-#+END_SRC
+```
 
 You can also directly use the files from this git repo, you just need
 to remember to replace all spaces with ~%20~.
 
-#+BEGIN_SRC plantuml
+```
   @startuml
   !define GCPBase https://gitlab.com/rolando.a/plantuml-gcp-icons/raw/master/GCP%20Icons/Products%20&%20Services
 
@@ -38,7 +40,7 @@ to remember to replace all spaces with ~%20~.
 
   foo -> bar
   @enduml
-#+END_SRC
+```
 
 The API for the macros generated is as follows:
 
