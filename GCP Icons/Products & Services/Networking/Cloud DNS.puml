@@ -20,12 +20,5 @@ YfhVR0FSd4PuCwjwO6OU6so0l2Fow_yAFrl_rrz-e3xow_zl-tD003080468_gaNO-ez3KZtQVVtr-xl
 Vt_j_lxYVVPFzsdtzzVkxo_UfztVNxk_ltYVTdz_yJxnFl4-yJxQUyJxQE_1yVcPcPcPcPdv
 }
 
-
-!definelong GCP_CloudDNS(alias,name,container='rectangle',stereo='CloudDNS')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudDNS{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudDNS)
+!define GCP_CloudDNS(alias, name) GCPEntity(alias, name, CloudDNS, CloudDNS)

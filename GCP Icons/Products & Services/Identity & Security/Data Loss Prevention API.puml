@@ -20,12 +20,5 @@ fZlpoxpynfjZttyz19Qzt6bm5nZxcFxXDkNz4GI4zB_RduC20640YaBqJ-tH2BgzJmFOFzsdtTzVkx-_
 _RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGVb_ElNyvcPcPcPcGS
 }
 
-
-!definelong GCP_DataLossPreventionAPI(alias,name,container='rectangle',stereo='DataLossPreventionAPI')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$DataLossPreventionAPI{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(DataLossPreventionAPI)
+!define GCP_DataLossPreventionAPI(alias, name) GCPEntity(alias, name, DataLossPreventionAPI, DataLossPreventionAPI)

@@ -8,12 +8,5 @@ _CtDppytF__a_2s_ch-v-VddvkUVdB_bL_CtDp__tFpya_Et_6h-vkRddvkVVtB-bb_Dtzpy_7Fpyq_E
 RtB-Pk6Va-ZFMVZdDFfpTu-lggggggggdm
 }
 
-
-!definelong GCP_DedicatedInterconnect(alias,name,container='rectangle',stereo='DedicatedInterconnect')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$DedicatedInterconnect{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(DedicatedInterconnect)
+!define GCP_DedicatedInterconnect(alias, name) GCPEntity(alias, name, DedicatedInterconnect, DedicatedInterconnect)

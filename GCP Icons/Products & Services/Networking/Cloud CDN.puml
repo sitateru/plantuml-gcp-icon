@@ -11,12 +11,5 @@ my-Fd0_vrNnmy_FZ-F_Q_-V-lpyMTVz1_HSmxp-f_sRgvxxxZ-g_gl_ikQZxx-e_X7ljlwp_z8Knzz_M
 v5VpmStFZvkV7paVyglvuERdnytFZvmF-TLySFFpu-RdHyu7Dpy_Rdv-v7nmy_CZvuES3t8-oFc0Mm_8-S1Sly_byQMKKaeffPHI_WC
 }
 
-
-!definelong GCP_CloudCDN(alias,name,container='rectangle',stereo='CloudCDN')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudCDN{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudCDN)
+!define GCP_CloudCDN(alias, name) GCPEntity(alias, name, CloudCDN, CloudCDN)

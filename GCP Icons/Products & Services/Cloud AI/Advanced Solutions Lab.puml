@@ -27,12 +27,5 @@ _G4WR06SVpBB3-8hy9bVPO5f_itFWqzR8Bvn012VtCh-HJ_unxO0n3SDm19PO9v_LOVy8Bw9NsE1WVip
 lxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGUP_FkTR-5-CpCpCpCp5m
 }
 
-
-!definelong GCP_AdvancedSolutionsLab(alias,name,container='rectangle',stereo='AdvancedSolutionsLab')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$AdvancedSolutionsLab{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(AdvancedSolutionsLab)
+!define GCP_AdvancedSolutionsLab(alias, name) GCPEntity(alias, name, AdvancedSolutionsLab, AdvancedSolutionsLab)

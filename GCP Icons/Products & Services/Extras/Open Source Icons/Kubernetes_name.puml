@@ -1,4 +1,4 @@
-sprite $Kubernetes_name_name [1600x237/16z] {
+sprite $Kubernetes_name [1600x237/16z] {
 xD21000000AW_QdVuq8eymO0000000000000000000000000000000000Dm2000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000043Rkxi3XNaUYCA-LVy5VxyLl5w6ep771IHYXFKaIs2J3SY_sEqbys7PtyWMSZlS9wiVzNwq
 xfNxYlb2dOINfPiQ41UGQK63zADl9EykU6QeGkTwzRs7zMDxlNEt2bwmVlIrf64gpXyMS6OWBQ2_R_gHJmjzGm8DeWgTO9dPm_RCcFr3SJwocFFoKt55mPDV
@@ -38,12 +38,5 @@ P6MLbRk1xnhpHqB-FA_MrIz8e1ZzA6WlMcL1N7GThNxql-q1FLe52PIY7mNjHQliZOil91xq5pjAjf6l
 Vl3zNVeUV38kTCJqh-snlTHO-eMux6-kBk-7VDklpUoPnj8lmsLx0vNrnwKT-VZul9xeA_tkTDbVeBA2kFvAXwicgVgsukzDb_qjUygz7TT_0m
 }
 
-
-!definelong GCP_Kubernetes_name(alias,name,container='rectangle',stereo='Kubernetes_name')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Kubernetes_name{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Kubernetes_name)
+!define GCP_Kubernetes_name(alias, name) GCPEntity(alias, name, Kubernetes_name, Kubernetes_name)

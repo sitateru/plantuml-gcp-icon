@@ -14,12 +14,5 @@ vjFcpw_Ddr-Sp_nfFct-_Dhy-SNvp9_cq-RFhysVNvpF_6a-RVxyslpvnVcq-VDhy-SNvpD_ca-RFxys
 jFdpQ_Fd5-SpVvfFcp-_Ddz-SJvj_lpQ_Fd5-RJvyulpYVE9yudpqTOZpaTR3twFNskjjTPQQwtr
 }
 
-
-!definelong GCP_StandardNetworkTier(alias,name,container='rectangle',stereo='StandardNetworkTier')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$StandardNetworkTier{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(StandardNetworkTier)
+!define GCP_StandardNetworkTier(alias, name) GCPEntity(alias, name, StandardNetworkTier, StandardNetworkTier)

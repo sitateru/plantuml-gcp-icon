@@ -8,12 +8,5 @@ yhV_C__tkVO_xzv-dlV-zyv_R1P__ix_vU_yR_xElzlcF-Hl_al-vZ_bR_wPRVvV_kP_vc_-R_xcNz_A
 t-JyRMxzDZb_crR_hIUFhwgggggggdS
 }
 
-
-!definelong GCP_PartnerInterconnect(alias,name,container='rectangle',stereo='PartnerInterconnect')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$PartnerInterconnect{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(PartnerInterconnect)
+!define GCP_PartnerInterconnect(alias, name) GCPEntity(alias, name, PartnerInterconnect, PartnerInterconnect)

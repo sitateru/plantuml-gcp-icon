@@ -14,12 +14,5 @@ xSy10S0W00GX-gTUZAb_D62xtzzslx_nFlsd-spt-zlkzpVUf_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV
 xsDxZ_4-jlVW-7oI94cIv0C
 }
 
-
-!definelong GCP_BigQuery(alias,name,container='rectangle',stereo='BigQuery')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$BigQuery{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(BigQuery)
+!define GCP_BigQuery(alias, name) GCPEntity(alias, name, BigQuery, BigQuery)

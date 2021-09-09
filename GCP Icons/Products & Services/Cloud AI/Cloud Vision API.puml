@@ -12,12 +12,5 @@ nytFZvmFRdv-tFpyoFcGNyq7Dpy_Rdv-v7p8h-Q3cvyVDpy_SZxaL_F1pS-FcvyVEH_og_dWvkV7pS-F
 SZx8-O1R3yZvW5iFmFNuKaeffPHIIYcl
 }
 
-
-!definelong GCP_CloudVisionAPI(alias,name,container='rectangle',stereo='CloudVisionAPI')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudVisionAPI{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudVisionAPI)
+!define GCP_CloudVisionAPI(alias, name) GCPEntity(alias, name, CloudVisionAPI, CloudVisionAPI)

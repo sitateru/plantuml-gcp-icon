@@ -12,12 +12,5 @@ Q_Vt5--pVxfFkx-_Tdz_yJxxf_kq-_jhz_SNxxD_ka-xlxzsVt_nFlkd-xJx-sltznVlit-wJxk_ltP_
 dv-PcPcPcPa7
 }
 
-
-!definelong GCP_CloudDeploymentManager(alias,name,container='rectangle',stereo='CloudDeploymentManager')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudDeploymentManager{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudDeploymentManager)
+!define GCP_CloudDeploymentManager(alias, name) GCPEntity(alias, name, CloudDeploymentManager, CloudDeploymentManager)

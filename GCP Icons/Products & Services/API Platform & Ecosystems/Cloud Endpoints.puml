@@ -9,12 +9,5 @@ OVvgFdJpvwURFp_bV9Y_cW_T_FdfvizFEH_ch-P3Dtz-kldpKyw7-QlvqCsVdsx-_9JpePi_Fzty-Idd
 RlxyTFFdfvmFyrVpePi_Fzty-Iddm_pLVEZcpqytVtxA-T3Ddvzk_loKyw6RFp_bV2ZdGpaVolb0jnuevmC5-d22F7xRjctRjctRjctx3m
 }
 
-
-!definelong GCP_CloudEndpoints(alias,name,container='rectangle',stereo='CloudEndpoints')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudEndpoints{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudEndpoints)
+!define GCP_CloudEndpoints(alias, name) GCPEntity(alias, name, CloudEndpoints, CloudEndpoints)

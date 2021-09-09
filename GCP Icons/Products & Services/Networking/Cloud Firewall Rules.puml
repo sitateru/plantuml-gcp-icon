@@ -8,12 +8,5 @@ Vlwv-Vadvs_vrVpDpSy_Dp__vFmjlvg_kVdvv-Rddvo_vLVpDpS__zpy_9Fpj_ng_kRcvv-Rdtzo_fPV
 Dot_oAe_qlAFlFeZ2VxNzyzZxNnLLLLLLLN_0W
 }
 
-
-!definelong GCP_CloudFirewallRules(alias,name,container='rectangle',stereo='CloudFirewallRules')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudFirewallRules{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudFirewallRules)
+!define GCP_CloudFirewallRules(alias, name) GCPEntity(alias, name, CloudFirewallRules, CloudFirewallRules)

@@ -13,12 +13,5 @@ Z7LV0GSoxekX5a2a-qvqu0BTLyw1VFFZ7NZbk2_6_sj_3We0X04e2j4_jHsywFO-3RY4jzhz_SNxjFlx
 ka-xlxzsVt_nFlkd-xJx-sltznVlit-wJxk_ltP_V_4-xVx-sltznVkq-_kBzudtYVU9zz7U8zv7Umz-dv-PcPcPcPa7
 }
 
-
-!definelong GCP_CloudAutoML(alias,name,container='rectangle',stereo='CloudAutoML')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudAutoML{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudAutoML)
+!define GCP_CloudAutoML(alias, name) GCPEntity(alias, name, CloudAutoML, CloudAutoML)

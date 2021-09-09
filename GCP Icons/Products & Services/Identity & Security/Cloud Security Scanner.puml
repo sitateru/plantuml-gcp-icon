@@ -19,12 +19,5 @@ xoCluS_-x9xlymQCjcxczyPle8kEV0q_FrCqW3w5K6vLp4_5y_WyFw-Vsvy30W1X00X2z4zj2tNxem6V
 _-a-s_t-jllzZVVfFzrdkz_VTh-_yJxR_Vws-_sDzzdkzpVUPxpFU9_nFhRt6EzZUmz-dq-I94cIF
 }
 
-
-!definelong GCP_CloudSecurityScanner(alias,name,container='rectangle',stereo='CloudSecurityScanner')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudSecurityScanner{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudSecurityScanner)
+!define GCP_CloudSecurityScanner(alias, name) GCPEntity(alias, name, CloudSecurityScanner, CloudSecurityScanner)

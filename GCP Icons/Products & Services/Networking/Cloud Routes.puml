@@ -14,12 +14,5 @@ TH05tV_jLMt-_E9yva_pQVFdr-RFByvd_ZIVDdz-RVxyudpcJ_Dfy-VNviylpcV-D9ysVtvj_lpYVEPF
 -VEByudpYVE9yz7M8yv7Mmz-ZrzhhRNMMckjzG
 }
 
-
-!definelong GCP_CloudRoutes(alias,name,container='rectangle',stereo='CloudRoutes')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudRoutes{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudRoutes)
+!define GCP_CloudRoutes(alias, name) GCPEntity(alias, name, CloudRoutes, CloudRoutes)

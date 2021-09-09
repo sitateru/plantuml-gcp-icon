@@ -11,12 +11,5 @@ mVKg1VupXNlcpOyVtlpuOSu7uhVc0zxy-E7DZn_cV21-QpxWpOyVtlpuOSu7lFdnmviVFxpvySES3tZp
 tzFZKqeffPHIIYbz1G
 }
 
-
-!definelong GCP_CloudVPN(alias,name,container='rectangle',stereo='CloudVPN')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudVPN{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudVPN)
+!define GCP_CloudVPN(alias, name) GCPEntity(alias, name, CloudVPN, CloudVPN)

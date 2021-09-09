@@ -1,15 +1,8 @@
-sprite $modifiers_preemptablevm_preemptable [120x120/16z] {
+sprite $modifiers_preemptablevm [120x120/16z] {
 xTh7ZGKn3CPWTi3-gzsS3RmiQR3-UPluNPtuLKeffPIyCBwwyDxf775rn7Klrr8tRbmgYXktihXnTSHL7N2TSNslstN6zQjMrndNd_MvJhXhkxdkvhgRwswk
 ZIupBlJ02tl2TUbHyryu0LlcSigrp3rnizBbf6kL2wTWPrmRt0MUS-rmLzX-Twru_diqbsAN4so_IxtBWLmwN5PsngN9vHWkRIuBs-_IwJBkqkjocgrsQNUP
 T1bmqUmln8qRDsxEZSJz9-VDsCs5APTQDwMKKahF
 }
 
-
-!definelong GCP_modifiers_preemptablevm(alias,name,container='rectangle',stereo='modifiers_preemptablevm')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$modifiers_preemptablevm{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(modifiers_preemptablevm)
+!define GCP_modifiers_preemptablevm(alias, name) GCPEntity(alias, name, modifiers_preemptablevm, modifiers_preemptablevm)

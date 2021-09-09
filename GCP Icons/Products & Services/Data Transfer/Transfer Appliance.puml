@@ -10,12 +10,5 @@ PFLZRkl-nzal0Vwe_Q-55xyC-vp1l_yCg6--dGPn_ZslqwDD3UNLtsb9EZ-uD_FhD0hpOzKTVfxbJthy
 lpP_Vd4-ywVvjFdpQ_Fd5-SpVvfFcp-_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFct-_Dhy-SNvjFdpY_E9yudpYVFHrYFEHriFVezVQwsrrbfhhVK
 }
 
-
-!definelong GCP_TransferAppliance(alias,name,container='rectangle',stereo='TransferAppliance')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$TransferAppliance{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(TransferAppliance)
+!define GCP_TransferAppliance(alias, name) GCPEntity(alias, name, TransferAppliance, TransferAppliance)

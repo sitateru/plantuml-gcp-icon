@@ -13,12 +13,5 @@ zFwJskLlO_U-_qOmlSBzbdN_aSro0HRWzX_q_LVV-y_Y3Bh_hkpevudlFsm1-ltD-o__jNC71G320133
 d4-SJvnFd8-s7d4-sdhmU_nQQwsrrbfhhGS
 }
 
-
-!definelong GCP_CloudVideoIntelligenceAPI(alias,name,container='rectangle',stereo='CloudVideoIntelligenceAPI')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudVideoIntelligenceAPI{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudVideoIntelligenceAPI)
+!define GCP_CloudVideoIntelligenceAPI(alias, name) GCPEntity(alias, name, CloudVideoIntelligenceAPI, CloudVideoIntelligenceAPI)

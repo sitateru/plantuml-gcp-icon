@@ -8,12 +8,5 @@ V-bt_vz-zr_gT__ja_m0rnWBNLDFptV_Txhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_qL_D
 JpTVVyhvIJTVVxhv-bFEJxhv-bFEJyhvIJa_QU7FbUZdMlXpDVgvLuytCpCpCpEpJm
 }
 
-
-!definelong GCP_CloudNaturalLanguageAPI(alias,name,container='rectangle',stereo='CloudNaturalLanguageAPI')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudNaturalLanguageAPI{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudNaturalLanguageAPI)
+!define GCP_CloudNaturalLanguageAPI(alias, name) GCPEntity(alias, name, CloudNaturalLanguageAPI, CloudNaturalLanguageAPI)

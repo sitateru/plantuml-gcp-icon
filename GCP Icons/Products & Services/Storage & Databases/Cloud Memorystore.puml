@@ -10,12 +10,5 @@ VkDyya_psURdjytFRvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6
 lggggggggXu
 }
 
-
-!definelong GCP_CloudMemorystore(alias,name,container='rectangle',stereo='CloudMemorystore')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudMemorystore{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudMemorystore)
+!define GCP_CloudMemorystore(alias, name) GCPEntity(alias, name, CloudMemorystore, CloudMemorystore)

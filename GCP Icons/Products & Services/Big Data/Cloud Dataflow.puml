@@ -16,12 +16,5 @@ eEr9Bu0TGKXdscBrYQeN02bgcuS0_b5epuAsPxu0tJX_PgSS13v0dxmANPvc0Lx_7k57G_-Tj_-vK0K7
 RFVxs-xtDzwd_tIVxNv_s_t-nllqd-wptUzlkz_VU9_-qtss-_rjz_iRxxFTxs-xtzzud-r-V-DznlkCzndlOtkFyJwsz-3n-IH9aYJ93m
 }
 
-
-!definelong GCP_CloudDataflow(alias,name,container='rectangle',stereo='CloudDataflow')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudDataflow{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudDataflow)
+!define GCP_CloudDataflow(alias, name) GCPEntity(alias, name, CloudDataflow, CloudDataflow)

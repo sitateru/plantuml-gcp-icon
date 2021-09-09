@@ -6,12 +6,5 @@ lB_rL_StTx__tFt-a_Ut_kh-vkxtdxlVV_B-rb_Ttzpz_dFt-q_Ut_gh-vkxtt_kVl_9-vkxtt_kVl_9
 pTtlFtU__-JzhR-wlxdx_UVkzv-yl_LNzpTtl__S_VwJzpTtl__S_VwJzpTtl__a_KtUt-JzJTxVvjvla_UtQVUdr-UJ94cI90S
 }
 
-
-!definelong GCP_BlueHexagon(alias,name,container='rectangle',stereo='BlueHexagon')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$BlueHexagon{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(BlueHexagon)
+!define GCP_BlueHexagon(alias, name) GCPEntity(alias, name, BlueHexagon, BlueHexagon)

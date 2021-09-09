@@ -15,12 +15,5 @@ bZ3r2ArKR_m9hJ-cL0DaW9jVptVz4xtoAUhvks-5Xp-kQFihF0DGEPz-YkTVr7-X_3m3G69pBXUqGVlh
 sJ_TfztVNxk_ltYV_TDzsltzjVlxY_VPFzsdtTzVkx-_U9_zqttQ_Vsr-_kBzsdtzzVkxo_UfztVNxnFl4-yJxoFzXxnFjfxSFlypCpCpCpCV
 }
 
-
-!definelong GCP_CloudPubSub(alias,name,container='rectangle',stereo='CloudPubSub')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudPubSub{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudPubSub)
+!define GCP_CloudPubSub(alias, name) GCPEntity(alias, name, CloudPubSub, CloudPubSub)

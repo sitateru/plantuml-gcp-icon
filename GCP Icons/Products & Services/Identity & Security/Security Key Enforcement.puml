@@ -12,12 +12,5 @@ lpYVDdz-RVxyudpcJ_Dfy-VNviylpcV-D9ysVtvj_lpYVEPFysdpvzVcpo_EP_uqdpP_Vct-_E9yva_p
 nFbewy7fyMkjjTPQQwsr_W4
 }
 
-
-!definelong GCP_SecurityKeyEnforcement(alias,name,container='rectangle',stereo='SecurityKeyEnforcement')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$SecurityKeyEnforcement{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(SecurityKeyEnforcement)
+!define GCP_SecurityKeyEnforcement(alias, name) GCPEntity(alias, name, SecurityKeyEnforcement, SecurityKeyEnforcement)

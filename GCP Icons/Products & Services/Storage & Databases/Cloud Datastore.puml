@@ -9,12 +9,5 @@ zOVDrnyuFz6FvYTillwm-Ve3voVwqVo4pTSVDbz_uFn4FvgViFdwm-Rh3voVw4Vp4pPVVzXy_O7p4pPV
 PcPcPcPczZy
 }
 
-
-!definelong GCP_CloudDatastore(alias,name,container='rectangle',stereo='CloudDatastore')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudDatastore{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudDatastore)
+!define GCP_CloudDatastore(alias, name) GCPEntity(alias, name, CloudDatastore, CloudDatastore)

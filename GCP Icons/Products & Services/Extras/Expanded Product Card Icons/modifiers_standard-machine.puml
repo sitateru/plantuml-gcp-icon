@@ -1,14 +1,7 @@
-sprite $modifiers_standardmachine_standard [120x120/16z] {
+sprite $modifiers_standardmachine [120x120/16z] {
 xTfL0KKn342nEfX_jOyPBuzo_eOnq7XAaYIbXSl0dikWNYhMJIkLWJrNdSlbShbSxlyh_-_DT-_bSYEN6z6R6xdSQCZbVjXBdzh03IwNo-LokLmkbylbShbS
 BdT-9RfSBfVBvUQ1pTTj81Snjob9alO
 }
 
-
-!definelong GCP_modifiers_standardmachine(alias,name,container='rectangle',stereo='modifiers_standardmachine')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$modifiers_standardmachine{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(modifiers_standardmachine)
+!define GCP_modifiers_standardmachine(alias, name) GCPEntity(alias, name, modifiers_standard-machine, modifiers_standardmachine)

@@ -13,12 +13,5 @@ TVJnBsGc_wokvd_v_6xlJWeO1W8WXkcv_16NG-_4OmP2uFD5_lutd1Txv__eV9zF-t-r_visVtvj_lpY
 Y_EPFysdpPzVcp-_E9_vqtpQ_Fcr-VEByva_pQVDdr-RFxyudpP_Vct-_E9yslpvnVd4-SJvnFbewn7dewq7VuzVQwsrrbfhhVK
 }
 
-
-!definelong GCP_ContainerRegistry(alias,name,container='rectangle',stereo='ContainerRegistry')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$ContainerRegistry{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(ContainerRegistry)
+!define GCP_ContainerRegistry(alias, name) GCPEntity(alias, name, ContainerRegistry, ContainerRegistry)

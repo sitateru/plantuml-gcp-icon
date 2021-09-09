@@ -17,12 +17,5 @@ cWzkVdxS_Fp8-P1VpGStFpzkVdxaVCYlveERdnytFpzoFkHNyy7Dpu-Rdnyv7_Ah-U3cvyVDpu-S3sv-
 jTPQQwsrrdu1
 }
 
-
-!definelong GCP_AppEngine(alias,name,container='rectangle',stereo='AppEngine')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$AppEngine{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(AppEngine)
+!define GCP_AppEngine(alias, name) GCPEntity(alias, name, AppEngine, AppEngine)

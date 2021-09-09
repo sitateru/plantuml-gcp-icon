@@ -13,12 +13,5 @@ rlw_ylV_bx__o_pV-h-zdhx9x_yvlsr-VkDyya_psURdjytFRvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_
 vpVEPvkVtpYVSJxZVCRvsDPZd8zjFVWylggggggggcu
 }
 
-
-!definelong GCP_CloudDataprep(alias,name,container='rectangle',stereo='CloudDataprep')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudDataprep{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudDataprep)
+!define GCP_CloudDataprep(alias, name) GCPEntity(alias, name, CloudDataprep, CloudDataprep)

@@ -12,12 +12,5 @@ d0_nM_F1cny_tlpuCUT3_DPyyER7ZpS_Vipv4Byr7xpvyUFDZnzpFiHlpGTlVlnuy-F7d0_U_FZnviUF
 IYcbz0C
 }
 
-
-!definelong GCP_CloudRouter(alias,name,container='rectangle',stereo='CloudRouter')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudRouter{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudRouter)
+!define GCP_CloudRouter(alias, name) GCPEntity(alias, name, CloudRouter, CloudRouter)

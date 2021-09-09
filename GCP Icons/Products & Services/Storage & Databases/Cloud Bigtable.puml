@@ -20,12 +20,5 @@ tQ7UVo3x-1VCxhM3Bm3X5uYiJi0dy7EAfHMxxmAW-TMTqg--00lFQRXTVW4OdWY--08yd1ApyK_Xn_SR
 zpVUf_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV_jDzjllzRVVx6--ptUzlkz_VU9_jVd_ZVSRxZFSPxsDxZ_4-jlVWzlaaIP8aoHS
 }
 
-
-!definelong GCP_CloudBigtable(alias,name,container='rectangle',stereo='CloudBigtable')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudBigtable{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudBigtable)
+!define GCP_CloudBigtable(alias, name) GCPEntity(alias, name, CloudBigtable, CloudBigtable)

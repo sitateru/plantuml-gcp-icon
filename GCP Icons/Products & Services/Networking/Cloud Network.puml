@@ -11,12 +11,5 @@ VtxEl-S3eFpp_HTyWB3n_IS1y4d_MF-nx-tT0G708024mEkVUZ6cyZIu1FG6G1jWpNy-dpP_Vct-_E9y
 yva_pQVDdr-RFxyud_dJVDhy-RNvyulpcJ_DfysVNvi_lpYVDdz-RVxyudpQ_Fd5-SJvnFd4-MZh4UUZhGV7uzTQQwsrrbfhVG
 }
 
-
-!definelong GCP_CloudNetwork(alias,name,container='rectangle',stereo='CloudNetwork')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudNetwork{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudNetwork)
+!define GCP_CloudNetwork(alias, name) GCPEntity(alias, name, CloudNetwork, CloudNetwork)

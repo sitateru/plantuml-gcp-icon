@@ -8,12 +8,5 @@ NvpF_6a-RVxyslpvnVdCd-RJvi-lpPzVd4-RFxysVtvnFlEd-RJvyslpvnVdCt-QJvi_lpP_Vd4-ywVv
 vzFcpw_Ddr-SJvi_lpYVE9yudpWVRJtYVBJruFVujTPQQwsrrbeF
 }
 
-
-!definelong GCP_CloudStorage(alias,name,container='rectangle',stereo='CloudStorage')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudStorage{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudStorage)
+!define GCP_CloudStorage(alias, name) GCPEntity(alias, name, CloudStorage, CloudStorage)

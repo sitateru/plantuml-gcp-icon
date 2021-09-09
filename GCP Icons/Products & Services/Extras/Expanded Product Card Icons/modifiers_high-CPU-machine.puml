@@ -1,14 +1,7 @@
-sprite $modifiers_highCPUmachine_high [120x120/16z] {
+sprite $modifiers_highCPUmachine [120x120/16z] {
 xTArWSH054J1dq7bd-svnmk25lGp1LD3SvHQQwsrrXeXbX1BY2N44c89iOHOGYmXbX1BY2N44c89iOHOGYmXbX1BY2N44c89iOHOGYmXbX1BY2N44c89iOHO
 GYmXbX3BNA_MMlDh_x_wylR7I0jO_xzRxdh3jTprbkifjsxT9zzUqgtxiv0xLtRhJiQTZ3kxkVEb2xW_Mt3hwjQT1UuiO6SMkBE0dLdWpWBsSBNMMckjjTO-
 }
 
-
-!definelong GCP_modifiers_highCPUmachine(alias,name,container='rectangle',stereo='modifiers_highCPUmachine')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$modifiers_highCPUmachine{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(modifiers_highCPUmachine)
+!define GCP_modifiers_highCPUmachine(alias, name) GCPEntity(alias, name, modifiers_highCPUmachine, modifiers_highCPUmachine)

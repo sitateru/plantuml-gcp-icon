@@ -11,12 +11,5 @@ sD8ukDV_VZB__Y_s_pA_Ddz-SJxpf_cq-VDhy-SNvpD_ca-RFxysVtvnFlEd-RJvyslpvnVdq-RFhysV
 _lpQ_Fd5-SoVvjFcpw_Ddr-Sp_nfFct-_Dhy-SNvjFdpQ_Fd5-VJviylpYVE9yudpaTRZpWVRJtuFNwjjTPQQwsrrWC
 }
 
-
-!definelong GCP_CloudToolsforVisualStudio(alias,name,container='rectangle',stereo='CloudToolsforVisualStudio')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudToolsforVisualStudio{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudToolsforVisualStudio)
+!define GCP_CloudToolsforVisualStudio(alias, name) GCPEntity(alias, name, CloudToolsforVisualStudio, CloudToolsforVisualStudio)

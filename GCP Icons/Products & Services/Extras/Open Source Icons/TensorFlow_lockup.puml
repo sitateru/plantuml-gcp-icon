@@ -1,4 +1,4 @@
-sprite $TensorFlow_lockup_lockup [1460x1284/16z] {
+sprite $TensorFlow_lockup [1460x1284/16z] {
 xC6t0O0m302m57lc_syPwIijagOL00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -163,12 +163,5 @@ yUdwMZ5x7WJf0BDTQcTiadCXCNjURUdhPcEsPD0WsMoxaq6xPBiYPg_cFjYOZTcIGODiizrkov6eJpyn
 94bvrXuHlCPi5mb84CJaMPj4jdEDsVy1
 }
 
-
-!definelong GCP_TensorFlow_lockup(alias,name,container='rectangle',stereo='TensorFlow_lockup')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$TensorFlow_lockup{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(TensorFlow_lockup)
+!define GCP_TensorFlow_lockup(alias, name) GCPEntity(alias, name, TensorFlow_lockup, TensorFlow_lockup)

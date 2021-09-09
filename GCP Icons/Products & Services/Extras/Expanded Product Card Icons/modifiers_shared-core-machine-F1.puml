@@ -1,14 +1,7 @@
-sprite $modifiers_sharedcoremachineF1_shared [120x120/16z] {
+sprite $modifiers_sharedcoremachineF1 [120x120/16z] {
 xTh50OGm04N1tm7zLxlkhiJc7R4vOKbobYH9cdvS0NPR0NLNjUxqfmgmsnfskLmkbylDZPxi_ThDgW9kYhX94JTZkUdPvRx_02tgShbSxdNLkbmkbtijSBbS
 BfVBvNBDBt2vN2wNMmQslcu6kOfrcv8aQGa
 }
 
-
-!definelong GCP_modifiers_sharedcoremachineF1(alias,name,container='rectangle',stereo='modifiers_sharedcoremachineF1')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$modifiers_sharedcoremachineF1{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(modifiers_sharedcoremachineF1)
+!define GCP_modifiers_sharedcoremachineF1(alias, name) GCPEntity(alias, name, modifiers_sharedcoremachineF1, modifiers_sharedcoremachineF1)

@@ -13,12 +13,5 @@ jy4zt7xkyv_ZLRk_ltP_V_4--wVxjFlxQ_Vt5--pVxfFkx-_Tdz_yJxxf_kq-_jhz_SNxxD_ka-xlxzs
 sltznVlid-xJxk-ltTzVlC_-wJxj_lxQ_Vt5--oVxjFkxw_Ttr-yp_xfFkt-_jhz_SNxjFlxQ_Vt5-_JxkyltYVU9zudtaTxZtWVxJquV7vcPcPcPcRk
 }
 
-
-!definelong GCP_PremiumNetworkTier(alias,name,container='rectangle',stereo='PremiumNetworkTier')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$PremiumNetworkTier{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(PremiumNetworkTier)
+!define GCP_PremiumNetworkTier(alias, name) GCPEntity(alias, name, PremiumNetworkTier, PremiumNetworkTier)

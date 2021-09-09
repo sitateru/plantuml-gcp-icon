@@ -13,12 +13,5 @@ H_LcQS2htB5_ka-xlxzsVt_nFlkd-xJx-sltznVlq-xlhztVNxpF_ka-xVx-sltznVlid-xJxk-ltTzV
 _jhz_SNxjFlxQ_Vt5-_JxkyltYVU9zudtaTxZtWVxJtuV7vcPcPcPcOk
 }
 
-
-!definelong GCP_CloudSpanner(alias,name,container='rectangle',stereo='CloudSpanner')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudSpanner{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudSpanner)
+!define GCP_CloudSpanner(alias, name) GCPEntity(alias, name, CloudSpanner, CloudSpanner)

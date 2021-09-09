@@ -14,12 +14,5 @@ _g_uRFFps-RdDyvdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv
 dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 }
 
-
-!definelong GCP_CloudShell(alias,name,container='rectangle',stereo='CloudShell')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudShell{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudShell)
+!define GCP_CloudShell(alias, name) GCPEntity(alias, name, CloudShell, CloudShell)

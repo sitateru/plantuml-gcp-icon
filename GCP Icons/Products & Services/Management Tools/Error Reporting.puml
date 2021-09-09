@@ -12,12 +12,5 @@ dt-e3w3cwmDKljQ_Ei07N_Qn4p_FVuuVtlpuOSu7uhVc0zxy-E7DZn_cV21-QpxWpOyVtlpuOSu7uhVc
 FxpvySES3tZpuuStFtwOym5lVlmmvmFcVC2S3xZnwypqTMxyEZjztVRuBCkoBCkoBCkox5y
 }
 
-
-!definelong GCP_ErrorReporting(alias,name,container='rectangle',stereo='ErrorReporting')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$ErrorReporting{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(ErrorReporting)
+!define GCP_ErrorReporting(alias, name) GCPEntity(alias, name, ErrorReporting, ErrorReporting)

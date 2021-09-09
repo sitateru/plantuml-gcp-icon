@@ -15,12 +15,5 @@ X9l9lwZPCPcGRqIbFkNVxSz10O0m04KX-gSsWaVTtgS1L_CktcV_T9zsVt_j_lxYVVPFzsdtzzVkxo_U
 U9_zqttQ_Vsr-_kBzza_tQVTtr-xlxzud_tJVThz_RNx-ultsJ_TfztVNxk_ltYVTdz_xVx-udtQ_Vt5-yJxnFl4-sZl4U-ZlGU_py_CpCpCpCm3
 }
 
-
-!definelong GCP_IdentityAwareProxy(alias,name,container='rectangle',stereo='IdentityAwareProxy')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$IdentityAwareProxy{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(IdentityAwareProxy)
+!define GCP_IdentityAwareProxy(alias, name) GCPEntity(alias, name, IdentityAwareProxy, IdentityAwareProxy)

@@ -13,12 +13,5 @@ Ps_-yRCv7uv_QpxipJz-zkOVFvlp8TRwjVqv800O180WHF_KYp7rZmRqVwFFTh-_xNv_uttwJ_VPxlUt
 _hRx_OttsUxtDzvdlCzud_4-jlSOxsDx3uxF9qcI94a-
 }
 
-
-!definelong GCP_Genomics(alias,name,container='rectangle',stereo='Genomics')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Genomics{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Genomics)
+!define GCP_Genomics(alias, name) GCPEntity(alias, name, Genomics, Genomics)

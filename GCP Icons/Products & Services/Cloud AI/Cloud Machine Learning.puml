@@ -15,12 +15,5 @@ Ptm60lnk_Elym-lyItutS7typxlZztN-xNN-yyL_dV_-h_qvA00G1g0eHF_K9l2istyqeF-ByJxzf_ji
 d_xJVRRx_Mtt-nllqt-wptQ_l-r-V-DzjllzRVVx6--ptUzllCzud_4-utrixp7Un_OU_3wV94cI97a
 }
 
-
-!definelong GCP_CloudMachineLearning(alias,name,container='rectangle',stereo='CloudMachineLearning')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudMachineLearning{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudMachineLearning)
+!define GCP_CloudMachineLearning(alias, name) GCPEntity(alias, name, CloudMachineLearning, CloudMachineLearning)

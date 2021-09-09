@@ -1,15 +1,8 @@
-sprite $modifiers_autoscaling_autoscaling [120x120/16z] {
+sprite $modifiers_autoscaling [120x120/16z] {
 xTIvKKLH34H1PQ3yesNVBMYzkWB-77-glQbFfPHIIgal3jbvgiv3Tjwwwwp3SUFM9VrdDsxSk77ZTg-u_T22sqyTT_kbmsw_TTJj3nrq-rF7tFxIbjjdN8VT
 TTXTX-Ukm-uwF7STTjVXkUkmkmxFNOVTTNZkEkokmtFNuS-nwx2x3hlhiBiEkmlm0HTXTnrsrs5t7NRNOVz9XzrrUEuwxAx3SzTXTnsUkmwxw_3OTTZTEUok
 m-gEONJdCBfp6DqvZEuS1fVQSclBhIstjjpQSclBhIstmFr1tvp5ZLjRRlrxrsLt7NOtfPHIIlS
 }
 
-
-!definelong GCP_modifiers_autoscaling(alias,name,container='rectangle',stereo='modifiers_autoscaling')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$modifiers_autoscaling{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(modifiers_autoscaling)
+!define GCP_modifiers_autoscaling(alias, name) GCPEntity(alias, name, modifiers_autoscaling, modifiers_autoscaling)

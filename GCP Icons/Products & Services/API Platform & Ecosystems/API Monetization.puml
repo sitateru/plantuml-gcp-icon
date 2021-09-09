@@ -12,12 +12,5 @@ SJwWpRSVsdpx8Su7x9Vc0zfy-w7Djn_YVC1-QJwWpRSVsdpx8Su7x9Vc0zfy-w7Djn_YVC1-QJwWpRSV
 y-s7E1yGvmFYV42D7nFJnzJuCJbzR7gySyuvvvnpphcl
 }
 
-
-!definelong GCP_APIMonetization(alias,name,container='rectangle',stereo='APIMonetization')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$APIMonetization{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(APIMonetization)
+!define GCP_APIMonetization(alias, name) GCPEntity(alias, name, APIMonetization, APIMonetization)

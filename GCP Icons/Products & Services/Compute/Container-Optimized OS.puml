@@ -19,12 +19,5 @@ Ap0RbB_U2SH-s0jWNQdOyljVW6pAT7Gfs4zp_xMRgl9VKbNpNzkx0mA0GG08WTS_zM9CVMXm2MY0VY0_
 pSzlcv_VE9_yqtos-Vbjy_CRvvD_ciysFxzjVdxZVBRv-MtpynldiytFRvpFE9znFkDyREinpiUs7XoFhwgggggggWy
 }
 
-
-!definelong GCP_ContainerOptimizedOS(alias,name,container='rectangle',stereo='ContainerOptimizedOS')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$ContainerOptimizedOS{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(ContainerOptimizedOS)
+!define GCP_ContainerOptimizedOS(alias, name) GCPEntity(alias, name, ContainerOptimizedOS, ContainerOptimizedOS)

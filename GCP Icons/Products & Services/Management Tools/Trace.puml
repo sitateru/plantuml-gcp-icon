@@ -7,12 +7,5 @@ dtzdtUfV_hFkz2__QJVwzqwt-VFllMxpB_zxtULV_dUxoRydtUBFlsVTub_-PztXN_wdtU1l_tF-vxdv
 L_CtDp__tFpya_Et_6h-vkRddvkVVtB-bb_Dtzpy_7Fpyq_Etzpy_7Fpyq_Etzpy_9FpDpb_a_CtEN-RMxzDpj-crV_hr-EhgggggghgVm
 }
 
-
-!definelong GCP_Trace(alias,name,container='rectangle',stereo='Trace')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Trace{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Trace)
+!define GCP_Trace(alias, name) GCPEntity(alias, name, Trace, Trace)

@@ -15,12 +15,5 @@ CWNmpoY0jz3VfUlw9M-F_8HUbX4bL-2Xlmldy_uutl_bBqCwqszAZmU_SnJVzARvl_qv8K0W080WHF_K
 ZVVfFzrdkz_VTh-_yJxzf_jiz_lRxlSttcUxtzzslx_nFjlz_iRxZFSPxpFUn_OUutrixy7ZyqcI94cI7m
 }
 
-
-!definelong GCP_CloudSecurityCommandCenter(alias,name,container='rectangle',stereo='CloudSecurityCommandCenter')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudSecurityCommandCenter{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudSecurityCommandCenter)
+!define GCP_CloudSecurityCommandCenter(alias, name) GCPEntity(alias, name, CloudSecurityCommandCenter, CloudSecurityCommandCenter)

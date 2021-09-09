@@ -14,12 +14,5 @@ _g_uRFFps-RdDyvdcv_VDZ-_SJxvf_biy_FRvkStpYV_D9zjVdxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv
 dCyudt4-utniwp7EnxOU_1vVLLLLLLLL3m
 }
 
-
-!definelong GCP_CloudToolsforAndroidStudio(alias,name,container='rectangle',stereo='CloudToolsforAndroidStudio')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudToolsforAndroidStudio{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudToolsforAndroidStudio)
+!define GCP_CloudToolsforAndroidStudio(alias, name) GCPEntity(alias, name, CloudToolsforAndroidStudio, CloudToolsforAndroidStudio)

@@ -17,12 +17,5 @@ FVdLV73py-FcvqVEX_ngFhZv-N7pyoFdGtur7zpy_BZv-P7p8R-Q3sv-Vjpy_CZva5_D1pS_Fsv-VkHy
 7bzAAQMKKaefvGy
 }
 
-
-!definelong GCP_ApigeeSense(alias,name,container='rectangle',stereo='ApigeeSense')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$ApigeeSense{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(ApigeeSense)
+!define GCP_ApigeeSense(alias, name) GCPEntity(alias, name, ApigeeSense, ApigeeSense)

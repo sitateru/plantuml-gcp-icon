@@ -18,12 +18,5 @@ V_SNe7ittNudw0mUGVnvtFihZfdp_XAtHfxdr_z7w__P_XmG00m2G12YV-h5cFf70zZkzxVTxs-yJ__f
 Dzwd_tIVxNv_s_t-nljiz_lRxlSttcUxtzzud_4-utt6-zZUOxoFxJquFfyaIP8a-G
 }
 
-
-!definelong GCP_BeyondCorp(alias,name,container='rectangle',stereo='BeyondCorp')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$BeyondCorp{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(BeyondCorp)
+!define GCP_BeyondCorp(alias, name) GCPEntity(alias, name, BeyondCorp, BeyondCorp)

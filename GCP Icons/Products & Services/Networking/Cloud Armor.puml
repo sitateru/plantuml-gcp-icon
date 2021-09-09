@@ -18,12 +18,5 @@ VnzvALxF3_YYY5ti_xaTEY0060I047ZzKo_6r8S6nxa3Rk2JVvhFDZ-_RNv-utpoJ_FPvkUtpSzld4_-
 sURdDyvddCyudt4-jlKOvsDR3ux7LrLLLLLLrGS
 }
 
-
-!definelong GCP_CloudArmor(alias,name,container='rectangle',stereo='CloudArmor')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudArmor{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudArmor)
+!define GCP_CloudArmor(alias, name) GCPEntity(alias, name, CloudArmor, CloudArmor)

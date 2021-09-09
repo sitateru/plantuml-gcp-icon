@@ -15,12 +15,5 @@ FzIALvZwe6HRJXzHYKxK3oou0fpn3-8hwYDgSU7j8k1Ho-_sxg00G1W0ObZygyO37zYkTH05xV_vjlpJ
 RvnF_ca-s_pyjldvZVF9Fyrdcv_VDZ-_SJxR_Fos-Vbjy_CRvxFDps-Rdzyudsr-VkDynlcCynddOrkFSJwszU3t-Agggggggde
 }
 
-
-!definelong GCP_CloudIoTCore(alias,name,container='rectangle',stereo='CloudIoTCore')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudIoTCore{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudIoTCore)
+!define GCP_CloudIoTCore(alias, name) GCPEntity(alias, name, CloudIoTCore, CloudIoTCore)

@@ -8,12 +8,5 @@ Vt1kVlx9-Lj-DNzpy_FFpSy_ENzpy_FFpSy_EN_Bh-PlRdx-kVdv9-Tl-TNypStFFpS__-JyBR-Qlxdv
 SlxcvkUVcvz_SlxcvkUVdB_9-PkSlrduvoJwSnR-EOt-tEFnLLLLLLLLzHC
 }
 
-
-!definelong GCP_VirtualPrivateCloud(alias,name,container='rectangle',stereo='VirtualPrivateCloud')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$VirtualPrivateCloud{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(VirtualPrivateCloud)
+!define GCP_VirtualPrivateCloud(alias, name) GCPEntity(alias, name, VirtualPrivateCloud, VirtualPrivateCloud)

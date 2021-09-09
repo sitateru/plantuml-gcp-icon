@@ -12,12 +12,5 @@ xe00G1W0Gk3rJsqBTNjeS0beW9N_OpxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv-Mtpynldat-QppO_lsr-
 cv_VDZ-_SJxR_Fos-VcDyzdcvpVEPvpFE9znFhRr6ETZMmz-Zw-ggggggge7
 }
 
-
-!definelong GCP_Stackdriver(alias,name,container='rectangle',stereo='Stackdriver')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Stackdriver{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Stackdriver)
+!define GCP_Stackdriver(alias, name) GCPEntity(alias, name, Stackdriver, Stackdriver)

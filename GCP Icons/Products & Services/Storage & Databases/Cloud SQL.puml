@@ -15,12 +15,5 @@ s4Fxb-sVjd_R_dF-wzlcvpVE9_yqdsr-Vjly_CRvv9_ciytFRvkVtpYV_DDyjldvRVFp6-UJVvhFDZ-_
 6USppcUSZsqznldOreEFnrTLLLLLLTK9
 }
 
-
-!definelong GCP_CloudSQL(alias,name,container='rectangle',stereo='CloudSQL')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudSQL{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudSQL)
+!define GCP_CloudSQL(alias, name) GCPEntity(alias, name, CloudSQL, CloudSQL)

@@ -1,11 +1,5 @@
-sprite $modifiers_storage_storage [120x120/16z] xTT10G0G4031Qw1_Mpy10DnCWNrlB080GDaWSrStcYkxkhgwkgDqTGS1-45TFwYhgwlh1tNz880VrFM3khgwkdvGrmy20501
-
-
-!definelong GCP_modifiers_storage(alias,name,container='rectangle',stereo='modifiers_storage')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
+sprite $modifiers_storage [120x120/16z] xTT10G0G4031Qw1_Mpy10DnCWNrlB080GDaWSrStcYkxkhgwkgDqTGS1-45TFwYhgwlh1tNz880VrFM3khgwkdvGrmy20501
 }
-container "<b>name</b>\n<color:GCP_COLOR><$modifiers_storage{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+
+GCPColoring(modifiers_storage)
+!define GCP_modifiers_storage(alias, name) GCPEntity(alias, name, modifiers_storage, modifiers_storage)

@@ -15,12 +15,5 @@ jhCEu8tVlrjjTY-d_SCdu-RdHyrl_pa_Rdv-v7p8h-Q3cvyVDpy_SZxaL_F1pS-FcvyVEH_og_dWvkV7
 dnytFpzoFhZv-P7pGSu7EH_aVC2j1-HyGAS_pVJuKaeffPHIIYd_
 }
 
-
-!definelong GCP_ApigeeAPIPlatform(alias,name,container='rectangle',stereo='ApigeeAPIPlatform')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$ApigeeAPIPlatform{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(ApigeeAPIPlatform)
+!define GCP_ApigeeAPIPlatform(alias, name) GCPEntity(alias, name, ApigeeAPIPlatform, ApigeeAPIPlatform)

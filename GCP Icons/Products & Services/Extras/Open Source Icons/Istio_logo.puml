@@ -1,4 +1,4 @@
-sprite $Istio_logo_logo [640x640/16z] {
+sprite $Istio_logo [640x640/16z] {
 xC610000082W_QaNgG80000000000000000000000000000000000000000000000000000000000000002OlViuRYI8eY28A_rtU2tWYV6t6l6oB6YHaAEU
 JjBFPpJn9_vM0Oe_yRSAKFo9lrM0ua_y1G0b_iIV-1i5AFx4tof0yIV-LW6AF_4N09Ju4t_YRnIW-1D_08e_yRS5KFo9Fm35d_ZxNm0b_iIV-0DG_8c_HO3Y
 J_m1AFx4tpr0YJ_n9_u057_YRmkW-1D_08e_yGUW-1D_08g_8F4d_WO0YZ_n1w3u4ty0YZ_n1w3u2n9_ucy0eFWJVm2AF_47eFWJVm2AF_5t0L3YJ_o9Fm35
@@ -17,12 +17,5 @@ BgaD002W4uq2000000000000000000000000000000000000003WWG00000000000000000000000000
 000000000000000000000000004
 }
 
-
-!definelong GCP_Istio_logo(alias,name,container='rectangle',stereo='Istio_logo')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Istio_logo{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Istio_logo)
+!define GCP_Istio_logo(alias, name) GCPEntity(alias, name, Istio_logo, Istio_logo)

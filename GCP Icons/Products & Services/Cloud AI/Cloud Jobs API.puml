@@ -13,12 +13,5 @@ lqzr_lu5B8VpsMzSmE9y0D1KmUzVmE9z0DWqnZY7d-V_nO-R7pzoFhZvyUFcnu-S3_6h-U3cnu-R7pzo
 -V7ZviUFd0_ng_dWviUFcny_SZwu-V7ZviUFd0zkVlp8-I3dWvmFSZxWrWDoFk3M0t1xV98aIP8aIP8aIV8F
 }
 
-
-!definelong GCP_CloudJobsAPI(alias,name,container='rectangle',stereo='CloudJobsAPI')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudJobsAPI{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudJobsAPI)
+!define GCP_CloudJobsAPI(alias, name) GCPEntity(alias, name, CloudJobsAPI, CloudJobsAPI)

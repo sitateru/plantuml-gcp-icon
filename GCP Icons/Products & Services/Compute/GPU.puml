@@ -11,12 +11,5 @@ E9zjVdxR_Fp6-UIVvhFDps-Rdzyud_pJVBRv-Mtpynldat-QppO_lsr-VkDyya_psURdjytFRvnF_ca-
 npWVsthmv_5LLLLLLLNr3m
 }
 
-
-!definelong GCP_GPU(alias,name,container='rectangle',stereo='GPU')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$GPU{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(GPU)
+!define GCP_GPU(alias, name) GCPEntity(alias, name, GPU, GPU)

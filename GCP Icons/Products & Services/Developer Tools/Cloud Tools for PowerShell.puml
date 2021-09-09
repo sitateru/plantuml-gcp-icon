@@ -11,12 +11,5 @@ J-lxtnPctmiRz3ykwt-r-_U_0f7zp_rs_S-d__qJaVCFu_xp3u1c_gL7phzqGdwaVdukwVxpJy0cyszd
 FysdpPzVcp-_E9_vqtpQ_Fcr-VEByva_pQVDdr-RFxyudpP_Vct-_E9yslpvnVd4-SJvnFbewn7dewq7Fy87kjpDvwsrrbfhhRNM5G
 }
 
-
-!definelong GCP_CloudToolsforPowerShell(alias,name,container='rectangle',stereo='CloudToolsforPowerShell')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudToolsforPowerShell{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudToolsforPowerShell)
+!define GCP_CloudToolsforPowerShell(alias, name) GCPEntity(alias, name, CloudToolsforPowerShell, CloudToolsforPowerShell)

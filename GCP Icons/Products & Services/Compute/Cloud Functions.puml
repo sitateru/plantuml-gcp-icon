@@ -11,12 +11,5 @@ d7LycDA65m2Pb3Mx-Rd-JQx_fFYj-P8tFtvvy-ENEL_oviSlRtxyCkTByLlp9Mz-_FBcnozplXI_DL_o
 RtxyCkTByLlp9Mz-_FBcnozplkJDZr_U_FXbpfUy-V7Bd2-PyoLplcJEb-IjbsJEbsIbN_Vs-9HIIYcbb59AFm8
 }
 
-
-!definelong GCP_CloudFunctions(alias,name,container='rectangle',stereo='CloudFunctions')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudFunctions{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudFunctions)
+!define GCP_CloudFunctions(alias, name) GCPEntity(alias, name, CloudFunctions, CloudFunctions)

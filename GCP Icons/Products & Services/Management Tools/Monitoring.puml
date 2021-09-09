@@ -12,12 +12,5 @@ Q_Vt5--pVxfFkx-_Tdz_yJxxf_kq-_jhz_SNxxD_ka-xlxzsVt_nFlkd-xJx-sltznVlit-wJxk_ltP_
 dv-PcPcPcPa7
 }
 
-
-!definelong GCP_Monitoring(alias,name,container='rectangle',stereo='Monitoring')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Monitoring{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Monitoring)
+!define GCP_Monitoring(alias, name) GCPEntity(alias, name, Monitoring, Monitoring)

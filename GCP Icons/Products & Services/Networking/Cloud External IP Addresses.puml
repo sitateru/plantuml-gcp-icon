@@ -9,12 +9,5 @@ z1VptV_Jdsw-_bJptN_Mdsw-_fJp4_tL_AIRhp_TVFqfvoVwg_b9Drz_kldwKyvFz5Vpasw-_dJpzQUS
 dsw-_fJpasw-_fJpat9-KivFolb9klL9olb9QlMlJOytCpCpCpEptm4
 }
 
-
-!definelong GCP_CloudExternalIPAddresses(alias,name,container='rectangle',stereo='CloudExternalIPAddresses')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudExternalIPAddresses{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudExternalIPAddresses)
+!define GCP_CloudExternalIPAddresses(alias, name) GCPEntity(alias, name, CloudExternalIPAddresses, CloudExternalIPAddresses)

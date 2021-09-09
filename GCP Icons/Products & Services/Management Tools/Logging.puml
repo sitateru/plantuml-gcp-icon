@@ -8,12 +8,5 @@ NckQF_el6O3jPr-_RdTR_tkZkzy-Y3-J_3dI5B_-76kAF_gFDSEVM_clN__h_RV7w-RhJpTVVyhvYVvg
 Vxhv-bFEJ_HNyvDkllvqy_Mdd9_eh-OdtNpzwURhJpa_wURhJpTVVyhvIJTVVyhvIJa_AUSdvVmatVeavVmaDVfrjyURcPcPcPdP3m
 }
 
-
-!definelong GCP_Logging(alias,name,container='rectangle',stereo='Logging')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Logging{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Logging)
+!define GCP_Logging(alias, name) GCPEntity(alias, name, Logging, Logging)

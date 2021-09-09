@@ -14,12 +14,5 @@ F05m_-b_yK-0DFzG1y3Ml-_pwySx0Daj_y2RVz3phxsMKlqv03qkFtrkVmu800O180ZHF_LYJBsd0VM_
 _RNx-ultsJ_TfztVNxk_ltYV_TDzsltzjVlxY_Tfz_VNxkyltgVTtr-yJxnFl4-yZ_OUyJxQUt1yVcPcPcPcPZu
 }
 
-
-!definelong GCP_CloudIAM(alias,name,container='rectangle',stereo='CloudIAM')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$CloudIAM{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(CloudIAM)
+!define GCP_CloudIAM(alias, name) GCPEntity(alias, name, CloudIAM, CloudIAM)

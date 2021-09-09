@@ -11,12 +11,5 @@ V4T_Elknt7zPyu7LVkxj3tC-iDJVX7n7V_hxmNKDV_xv_rDipWVsvXy_zkOVFpRd0yU_DVzF-tD00308
 f_zqd-r-Vzlz_iRxz9_kiztlRxlVttYV_jDzjllzRVVx6--ptUzlkz_VU9_jVd_ZVSRxZFSPxsDxZ_4-jlVW-7oI94cIv0C
 }
 
-
-!definelong GCP_Debugger(alias,name,container='rectangle',stereo='Debugger')
-skinparam container<<stereo>> {
-  BackgroundColor White
-  BorderColor GCP_BORDER_COLOR
-  Shadowing false
-}
-container "<b>name</b>\n<color:GCP_COLOR><$Debugger{scale=0.25}></color>" <<stereo>> as alias
-!enddefinelong
+GCPColoring(Debugger)
+!define GCP_Debugger(alias, name) GCPEntity(alias, name, Debugger, Debugger)
