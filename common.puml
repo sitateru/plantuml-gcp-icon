@@ -1,2 +1,16 @@
 !define GCP_COLOR #4285f4
 !define GCP_BORDER_COLOR #4584ee
+
+skinparam defaultTextAlignment center
+
+!definelong GCPColoring(stereo)
+skinparam rectangle<<stereo>> {
+  BackgroundColor White
+  BorderColor GCP_BORDER_COLOR
+  Shadowing false
+}
+!enddefinelong
+
+!definelong GCPEntity(alias, name, sprite, product)
+rectangle "==name\n<color:GCP_COLOR><$sprite{scale=0.25}></color>" <<product>> as alias
+!enddefinelong
