@@ -1,0 +1,17 @@
+@startuml
+!include ./common.puml
+!include ./GCP Icons/Products & Services/Storage & Databases/Cloud Bigtable.puml
+!include ./GCP Icons/Products & Services/Big Data/BigQuery.puml
+!include ./GCP Icons/Products & Services/API Platform & Ecosystems/API Analytics.puml
+
+cloud cloud {
+  GCP_CloudBigtable(foo, big-t)
+  GCP_BigQuery(bar, big-q)
+}
+GCP_APIAnalytics(anl, analy) {
+  person client
+}
+
+foo -> bar
+
+@enduml
